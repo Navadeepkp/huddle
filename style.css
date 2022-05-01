@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1440px;
+    height: auto;
+    background: url(images/bg-desktop.svg),hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    
+}
+nav{
+    margin: 3rem;
+}
+nav > img {
+    height: 3.5rem;
+}
+.image-section{
+    margin: 4rem;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+}
+.text-section{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+.text-section > h1{
+    font-size: 2.2rem;
+    margin-top: 7rem;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.text-section > p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(223, 223, 223);
+    margin-right: 8px;
+
+}
+button{
+    margin-top: 1rem;
+    width: 11rem;
+    height: 3.5rem;
+    border-radius: 5rem;
+    border-style: none;
+    font-family:'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+    
+}
+.socialmedia{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -62px;
+    margin-left: -62px;
+    margin-bottom: 20px;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 30px;
+    
+}
+li .fa-brands {
+    display: inline-block;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    padding: 0.5em 0.6em;
+    color: #fff;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+.fa-brands:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+.attribution{
+    text-align: center;
+}
+/*mobile screeen*/
+@media screen and (max-width: 375px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        overflow-x:hidden;
+        
+    }
+    body{
+        background: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        width: 375px;
+        height: auto;
+        
+
+    }
+    nav{
+        margin: 2rem;
+        margin-bottom: 0;
+    }
+    nav img{
+        width: auto;
+        height: 1.6rem;
+    }
+    section{
+        margin-top: 0;
+        display: flex;
+        flex-direction:column;
+        justify-content:center ;
+        align-items: center;
+    }
+    .image{
+        height: 15rem;
+    }
+    .text-section > h1{
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .text-section > p{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 2rem;
+        letter-spacing: 1px;
+        margin: 10px;
+    }
+    button{
+        margin-left:5rem ;
+    }
+    
+    .socialmedia{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1px;
+        margin-bottom: 50px;
+    }
+
+};
